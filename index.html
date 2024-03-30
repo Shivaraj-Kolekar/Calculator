@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class=calculator>
+    <div class="Display">
+      <input id="display" readonly></input>
+    </div>
+    <div class="buttons">
+      
+      <div class="startrow">
+      <span>
+      <button id="Button(" onclick="inputData('(')"> ( </but>
+      <button id="Button)" onclick="inputData(')')"> ) </button> 
+      <button id="ButtonCE" onclick="clearDisplay()"> C </button>
+      <button id="Button+" onclick="inputData('+')"> + </button>
+      </span>
+      </div>
+      <div class="firstrow">
+      <span>
+      <button id="Button7" onclick="inputData('7')"> 7 </button>
+      <button id="Button8" onclick="inputData('8')"> 8</button> 
+      <button id="Button9" onclick="inputData('9')"> 9 </button>
+      <button id="Button+" onclick="inputData('-')"> - </button>
+      </span>
+      </div>
+      <div class="secondrow">
+      <span>
+      <button id="Button4" onclick="inputData('4')"> 4 </button>
+      <button id="Button5" onclick="inputData('5')"> 5 </button> 
+      <button id="Button6" onclick="inputData('6')"> 6 </button>
+      <button id="Button*" onclick="inputData('*')"> * </button>
+      </span>
+      </div>
+      <div class="thirdrow">
+      <span>
+      <button id="Button1" onclick="inputData('1')"> 1 </button>
+      <button id="Button2" onclick="inputData('2')"> 2</button> 
+      <button id="Button" onclick="inputData('3')"> 3 </button>
+      <button id="Button" onclick="inputData('/')"> / </button>
+      </span>
+      </div>
+      <div class="fourthrow">
+      <span>
+      <button id="Button" onclick="inputData('%')"> % </button>
+      <button id="Button" onclick="inputData('0')"> 0 </button> 
+      <button id="Button" onclick="inputData('.')"> . </button>
+      <button class="equal" onclick="calculate()"> = </button>
+      </span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
